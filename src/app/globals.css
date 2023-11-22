@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --font-family:'Work Sans', sans-serif;
+  --paragraph-size: 1rem;
+  --heading-size:2rem;
+  --color-bg:#ffffff;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 1rem .8rem;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-btn {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: 2px solid var(--color-bg);
+  background-color: transparent;
+  color: var(--color-bg);
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  cursor: pointer;
+  margin-left: 1rem;
+}

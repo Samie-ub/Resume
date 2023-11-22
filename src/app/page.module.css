@@ -1,0 +1,77 @@
+.main {
+  background-image: url("https://img.freepik.com/free-photo/abstract-sale-busioness-background-banner-design-multipurpose_1340-16803.jpg?w=996&t=st=1700673565~exp=1700674165~hmac=4ee7ac25e81b387df708ba4bcd7fae9c042d24c2149cc34feb4202651e11081d");
+  height: 94vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main h1 {
+  color: var(--color-bg);
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  font-weight: 500;
+}
+
+.flexContainer {
+  width: 98%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subMain {
+  background-image: url("https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8633.jpg?w=740&t=st=1700675780~exp=1700676380~hmac=c40f3080a98f14f35ccda29dbb294959c3e2ba38707e83da68e4db07858f6298");
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+.subMainThird {
+  background-image: url("https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8633.jpg?w=740&t=st=1700675780~exp=1700676380~hmac=c40f3080a98f14f35ccda29dbb294959c3e2ba38707e83da68e4db07858f6298");
+  height: 61vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.subMainThird h1 {
+  color: var(--color-bg);
+  font-weight: 500;
+}
+
+.subMain h1 {
+  color: var(--color-bg);
+  font-weight: 500;
+}
+
+.subMainThird p {
+  color: var(--color-bg);
+  margin: 0;
+}
+
+.socialIcon {
+  position: relative;
+  top: 30%;
+  margin-left: 1rem;
+}

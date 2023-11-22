@@ -1,0 +1,19 @@
+.navbarContainer{
+    position: fixed;
+    top: 0;
+}
+
+.navbarContainer h1{
+font-size: 1.3rem;
+background-color: var(--color-bg);
+padding: 1rem 2rem;
+border-radius: 1rem;
+border-top-right-radius: 0;
+border-bottom-left-radius: 0;
+letter-spacing: -2px;
+}
+
+.navbarContainer h1 img{
+    position: relative;
+    top: .1rem;
+}
