@@ -5,6 +5,10 @@
   --paragraph-size: 1rem;
   --heading-size:2rem;
   --color-bg:#ffffff;
+  --xs:600px;
+  --sm:767.98px;
+  --md:991.98px;
+  --lg: 1199.98px;
 }
 
 body{

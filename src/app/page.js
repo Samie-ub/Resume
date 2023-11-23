@@ -1,41 +1,90 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { Grid } from "@mui/material";
+import {
+  DataFreeToolContainer,
+  DataGenerateContainer,
+  contributionData,
+  socialLinkData,
+} from "./content";
 
 export default function Home() {
   return (
-    <Grid container justifyContent={"space-between"}>
-      <Grid item lg={7}>
-        <main className={styles.main}>
-          <h1>generate your cv NOW for free <img width="10" height="10" src="https://img.icons8.com/material-sharp/24/14a800/filled-circle.png" alt="filled-circle"/></h1>
-          <div>
-          <Link href={"generate"}>
-          
-          <button className="home-btn">generate</button>
-          </Link>
-          
-          </div>
-        </main>
-      </Grid>
-      <Grid item lg={4.9}>
-        <Grid container gap={2}>
-          <Grid item lg={12}>
-            <div className={styles.subMain}>
-              <h1>Get free tools right here <img width="10" height="10" src="https://img.icons8.com/material-sharp/24/14a800/filled-circle.png" alt="filled-circle"/></h1>
-              <button className="home-btn">Free tools</button>
-            </div>
-          </Grid>
-          <Grid item lg={12}>
-            <div className={styles.subMainThird}>
+    <Grid
+      container
+      justifyContent={"space-between"}
+      sx={{ gap: { xs: 2, md: 0 } }}
+    >
+      <Grid item xs={12} md={6} lg={7}>
+        {DataGenerateContainer.map((content, index) => {
+          return (
+            <main className={styles.main} key={index}>
+              <h1>
+                {content.content}
+                <img
+                  width={content.width}
+                  height={content.height}
+                  src={content.imgHref}
+                  alt="filled-circle"
+                />
+              </h1>
               <div>
-                 
-              <h1>Want to contribute.</h1>
-              <p>Let collebrate to take this project to next level.</p>
+                <Link href={"generate"}>
+                  <button className="home-btn">{content.btnText}</button>
+                </Link>
               </div>
+            </main>
+          );
+        })}
+      </Grid>
+      <Grid item xs={12} md={5.8} lg={4.9}>
+        <Grid container gap={2}>
+          <Grid item xs={12} md={12} lg={12}>
+            {DataFreeToolContainer.map((content, index) => {
+              return (
+                <div className={styles.subMain} key={index}>
+                  <h1>
+                    {content.content}
+                    <img
+                      width="10"
+                      height="10"
+                      src={content.imgHref}
+                      alt={content.alt}
+                    />
+                  </h1>
+                  <a className="home-btn">{content.btnText}</a>
+                </div>
+              );
+            })}
+          </Grid>
+          <Grid item xs={12} lg={12}>
+            <div className={styles.subMainThird}>
+              {contributionData.map((content, index) => {
+                return (
+                  <div key={index}>
+                    <h1>{content.title}</h1>
+                    <p>{content.paragraph}</p>
+                  </div>
+                );
+              })}
               <div>
-
-              <a href="/"><img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/github--v1.png" alt="github--v1"/></a>
-              <a href="/"><img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/linkedin-circled--v1.png" alt="linkedin-circled--v1"/></a>
+                {socialLinkData.map((content, index) => {
+                  return (
+                    <a
+                      href={content.link}
+                      target="_blank"
+                      rel="norefer"
+                      key={index}
+                    >
+                      <img
+                        width="50"
+                        height="50"
+                        src={content.imgHref}
+                        alt={content.alt}
+                      />
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </Grid>
