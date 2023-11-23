@@ -21,13 +21,4 @@ letter-spacing: -2px;
 .scrolled{
     left: -1rem;
     top: -1rem;
-
-    transition: .1s ease-in-out all;
 }
-
-@media (max-width:600px ){ 
-    .navbarContainer h1{
-       
-    }
-
-   }
