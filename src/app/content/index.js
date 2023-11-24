@@ -1,7 +1,11 @@
+
+export const greenCircle ="https://img.icons8.com/material-sharp/24/14a800/filled-circle.png"
+
+export const greenArrow = "https://img.icons8.com/sf-regular/48/14a800/right.png"
+
 export const DataGenerateContainer = [
   {
-    imgHref:
-      "https://img.icons8.com/material-sharp/24/14a800/filled-circle.png",
+    imgHref:greenCircle,
     height: 10,
     width: 10,
     content: "generate your cv NOW for free ",
@@ -11,8 +15,7 @@ export const DataGenerateContainer = [
 
 export const DataFreeToolContainer = [
   {
-    imgHref:
-      "https://img.icons8.com/material-sharp/24/14a800/filled-circle.png",
+    imgHref:greenCircle,
     alt: "filled-circle",
     content: "Get free tools right here",
     btnText: "Free tools",
@@ -38,3 +41,4 @@ export const socialLinkData = [
     link: "/",
   },
 ];
+

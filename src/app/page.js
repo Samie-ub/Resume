@@ -52,7 +52,8 @@ export default function Home() {
                       alt={content.alt}
                     />
                   </h1>
-                  <a className="home-btn">{content.btnText}</a>
+                  <a href="https://devuse.vercel.app/"
+                  target="_blank" className="home-btn">{content.btnText}</a>
                 </div>
               );
             })}
