@@ -8,8 +8,8 @@ export const DataGenerateContainer = [
     imgHref:greenCircle,
     height: 10,
     width: 10,
-    content: "generate your cv NOW for free ",
-    btnText: "generate",
+    content: "Post a random idea",
+    btnText: "post",
   },
 ];
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./page.module.css";
+import styles from "./styles/page.module.css";
 import { Grid } from "@mui/material";
 import {
   DataFreeToolContainer,
@@ -19,22 +19,24 @@ export default function Home() {
         {DataGenerateContainer.map((content, index) => {
           return (
             <main className={styles.main} key={index}>
-              <h1>
-                {content.content}
-                <img
-                  width={content.width}
-                  height={content.height}
-                  src={content.imgHref}
-                  alt="filled-circle"
-                />
-              </h1>
-              <div>
-                <Link href={"generate"}>
-                  <button className="home-btn">{content.btnText}</button>
-                </Link>
+              <div className={styles.overlay}>
+                <h1>
+                  {content.content}
+                  <img
+                    width={content.width}
+                    height={content.height}
+                    src={content.imgHref}
+                    alt="filled-circle"
+                  />
+                </h1>
+                <div>
+                  <Link href={"generate"}>
+                    <button className="home-btn">{content.btnText}</button>
+                  </Link>
+                </div>
               </div>
             </main>
-          );
+          );  
         })}
       </Grid>
       <Grid item xs={12} md={5.8} lg={4.9}>
@@ -52,8 +54,13 @@ export default function Home() {
                       alt={content.alt}
                     />
                   </h1>
-                  <a href="https://devuse.vercel.app/"
-                  target="_blank" className="home-btn">{content.btnText}</a>
+                  <a
+                    href="https://devuse.vercel.app/"
+                    target="_blank"
+                    className="home-btn"
+                  >
+                    {content.btnText}
+                  </a>
                 </div>
               );
             })}

@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap");
 
 :root {
-  --font-family:'Work Sans', sans-serif;
+  --font-family: "Work Sans", sans-serif;
   --paragraph-size: 1rem;
-  --heading-size:2rem;
-  --color-bg:#ffffff; 
-  --color-bg-black:#000000; 
-  --color-bg-green:#14A800; 
+  --heading-size: 2rem;
+  --color-bg: #ffffff;
+  --color-bg-black: #000000;
+  --color-bg-green: #14a800;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin: 1rem .8rem;
+  margin: 1rem 0.8rem;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -33,8 +33,8 @@ a{
   margin-left: 1rem;
 }
 
-.home-btn:hover{
+.home-btn:hover {
   background-color: var(--color-bg);
-  transition: .3s ease-in-out all;
-  color: var(--color-bg-black );
+  transition: 0.3s ease-in-out all;
+  color: var(--color-bg-black);
 }

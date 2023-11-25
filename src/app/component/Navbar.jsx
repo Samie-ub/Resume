@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useState } from 'react';
-import styles from '../navbar.module.css';
+import styles from '../styles/navbar.module.css';
 import Link from 'next/link';
 
 function Navbar() {
@@ -25,7 +25,7 @@ function Navbar() {
     <div className={`${styles.navbarContainer} ${scrollPosition > 4? styles.scrolled : ''}`}>
       <Link href="/">
         <h1>
-          Resume{' '}
+          FunFlex
           <img
             width="10"
             height="10"

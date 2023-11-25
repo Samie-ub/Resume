@@ -1,15 +1,20 @@
 .main {
-  background-image: url("https://img.freepik.com/free-photo/abstract-sale-busioness-background-banner-design-multipurpose_1340-16803.jpg?w=996&t=st=1700673565~exp=1700674165~hmac=4ee7ac25e81b387df708ba4bcd7fae9c042d24c2149cc34feb4202651e11081d");
-  height: 94vh;
+  background-image: url("https://img.freepik.com/free-vector/gradient-summer-illustration_23-2148946644.jpg?w=740&t=st=1700930156~exp=1700930756~hmac=a567b66fccf6b5f566a6345683d98a674d8c4ea2c0a60108ec11533a13dcbd84");
+  border-radius: 2rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 2rem;
+}
+
+.overlay {
+  background-color: #01010b80;
   width: 100%;
+  height: 94vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  border-radius: 2rem;
 }
 
 .main h1 {
@@ -76,18 +81,22 @@
   margin-left: 1rem;
 }
 
-.SecondPageContainer h1{
-text-transform: uppercase;
-font-size: 2.5rem;
-font-weight: 500;
-display: flex;
-justify-content: space-between;
-align-items: center;
+.SecondPageContainer h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.SecondPageContainer img {
+  width: 100%;
+}
 
-@media (max-width:600px ){ 
-  .main{
+@media (max-width: 600px) {
+  .overlay {
     height: 50vh;
+    
   }
- }
+}
