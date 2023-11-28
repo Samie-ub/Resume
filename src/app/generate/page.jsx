@@ -1,21 +1,18 @@
-"use client";
+
 import React from "react";
 import { Grid } from "@mui/material";
 import PostCard from "../component/PostCard";
+import styles from "../styles/slider.module.css";
 
 function Page() {
   return (
     <div>
+      <div className="white-space"></div>
       <Grid
         container
         alignItems="center"
-        sx={{
-          height: { xs: "60vh", md: "94vh" },
-          justifyContent: { xs: "space-between", md: "space-around" },
-        }}
       >
-        <Grid item xs={11} lg={12}>
-          <PostCard />
+        <Grid item xs={11} lg={12}> <PostCard />;
         </Grid>
       </Grid>
     </div>

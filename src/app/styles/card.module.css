@@ -1,53 +1,9 @@
-.cardImgContainer img {
-  width: 100%;
-  border-radius: 1rem;
-}
-
 .cardContainer {
   position: relative;
   cursor: pointer;
 }
 
-.iconsContainer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.589);
-  display: none;
-  justify-content: center;
-  padding: 10px;
-  transition: 0.5s ease-in-out all;
-}
-
-.afterContent {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+.cardImgContainer img{
   width: 100%;
-}
-
-.iconsContainer img {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 5rem;
-  border: 2px solid var(--color-bg-green);
-}
-
-.ProfileContainer {
-  display: flex;
-}
-
-.ProfileContainer span{
-  text-transform: capitalize;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  margin-left: .5rem;
-  font-size: 1rem;
-}
-.cardContainer:hover .iconsContainer {
-  display: flex;
+  border-radius: 1rem;
 }

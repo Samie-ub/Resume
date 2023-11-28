@@ -1,33 +1,46 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import styles from "../styles/card.module.css";
 import { Grid } from "@mui/material";
+import { galleryData } from "../content";
 
 function PostCard() {
+  useEffect(() => {
+    const handleOrientation = (event) => {
+      const { beta, gamma } = event;
+      const gyroElements = document.querySelectorAll(".gyro-element");
+
+      gyroElements.forEach((element) => {
+        const tiltX = gamma || 0; // Tilt left-to-right (in degrees)
+        const tiltY = beta || 0; // Tilt front-to-back (in degrees)
+
+        // Apply the gyro effect to each image element
+        element.style.transform = `rotateX(${tiltY}deg) rotateY(${tiltX}deg)`;
+      });
+    };
+
+    window.addEventListener("deviceorientation", handleOrientation);
+
+    return () => {
+      window.removeEventListener("deviceorientation", handleOrientation);
+    };
+  }, []);
+
   return (
-    <Grid container justifyContent={"space-around"}>
-      <Grid item lg={3}>
-        <div className={styles.cardContainer}>
-          <div className={styles.cardImgContainer}>
-            <img
-              src="https://img.freepik.com/free-vector/gray-3d-icosahedron-black-background-vector_53876-168031.jpg?w=740&t=st=1700943588~exp=1700944188~hmac=01f55ba54ebd18804f91a4593d31d70e4df64319df4b501b37b295d6e86ce3bc"
-              alt="random image"
-            />
-            <div className={styles.iconsContainer}>
-                <div className={styles.afterContent}>
-                    
-              <div className={styles.ProfileContainer}>
-                <img
-                  src="https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?w=740&t=st=1700943023~exp=1700943623~hmac=06752fb0776d73cc810c7d75f687f882d9e6faabb52ac99545ca2a111764f464"
-                  alt="dummy"
-                  />
-                <span>samie</span>
-                  </div>
+    <div>
+      <Grid container justifyContent={"center"} gap={2} mt={10}>
+        {galleryData.map((images, index) => (
+          <Grid item lg={3.5} key={index}>
+            <div className={`${styles.cardContainer} gyro-element`}>
+              <div className={styles.cardImgContainer}>
+                <img src={images.src} alt={`image-${index}`} />
               </div>
             </div>
-          </div>
-        </div>
+          </Grid>
+        ))}
       </Grid>
-    </Grid>
+      <div className={styles}></div>
+    </div>
   );
 }
 

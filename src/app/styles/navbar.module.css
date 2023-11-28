@@ -1,6 +1,7 @@
 .navbarContainer {
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 .navbarContainer h1 {

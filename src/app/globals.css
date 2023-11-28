@@ -38,3 +38,14 @@ a {
   transition: 0.3s ease-in-out all;
   color: var(--color-bg-black);
 }
+
+
+.white-space{
+  padding: 1.72rem;
+  background-image: linear-gradient(to right,#ffffff,#ffffff,#ffffffbb,#ffffffbb, #ffffffbb);
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  top: 0;
+  backdrop-filter: blur(20px);
+}
