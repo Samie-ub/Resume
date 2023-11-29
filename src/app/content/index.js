@@ -45,24 +45,24 @@ export const socialLinkData = [
 
 export const galleryData = [
   {
-    src: "https://img.freepik.com/free-vector/gray-3d-icosahedron-black-background-vector_53876-168031.jpg?w=740&t=st=1700943588~exp=1700944188~hmac=01f55ba54ebd18804f91a4593d31d70e4df64319df4b501b37b295d6e86ce3bc",
+    src: "https://res.cloudinary.com/dizynfu2h/image/upload/v1701132996/website%20images/v882-kul-28_typiii.jpg",
   },
   {
-    src: "https://img.freepik.com/free-vector/gray-3d-icosahedron-black-background-vector_53876-168031.jpg?w=740&t=st=1700943588~exp=1700944188~hmac=01f55ba54ebd18804f91a4593d31d70e4df64319df4b501b37b295d6e86ce3bc",
+    src: "https://res.cloudinary.com/dizynfu2h/image/upload/v1701133001/website%20images/2207.i126.008.F.m005.c9.sky_hittka.jpg",
   },
   {
-    src: "https://img.freepik.com/free-vector/gray-3d-icosahedron-black-background-vector_53876-168031.jpg?w=740&t=st=1700943588~exp=1700944188~hmac=01f55ba54ebd18804f91a4593d31d70e4df64319df4b501b37b295d6e86ce3bc",
+    src: "https://res.cloudinary.com/dizynfu2h/image/upload/v1701132989/website%20images/087615994299_ayoojc.jpg",
   },
   {
-    src: "https://img.freepik.com/free-vector/gray-3d-icosahedron-black-background-vector_53876-168031.jpg?w=740&t=st=1700943588~exp=1700944188~hmac=01f55ba54ebd18804f91a4593d31d70e4df64319df4b501b37b295d6e86ce3bc",
+    src: "https://res.cloudinary.com/dizynfu2h/image/upload/v1701132982/website%20images/beach-seascape-sunrise-with-palms_603843-3873_vaf5xo.jpg",
   },
   {
-    src: "https://img.freepik.com/free-vector/gray-3d-icosahedron-black-background-vector_53876-168031.jpg?w=740&t=st=1700943588~exp=1700944188~hmac=01f55ba54ebd18804f91a4593d31d70e4df64319df4b501b37b295d6e86ce3bc",
+    src: "https://res.cloudinary.com/dizynfu2h/image/upload/v1701133311/website%20images/hand-drawn-nature-scenes-illustration_23-2150053467_xyrivi.jpg",
   },
   {
-    src: "https://img.freepik.com/free-vector/gray-3d-icosahedron-black-background-vector_53876-168031.jpg?w=740&t=st=1700943588~exp=1700944188~hmac=01f55ba54ebd18804f91a4593d31d70e4df64319df4b501b37b295d6e86ce3bc",
+    src: "https://res.cloudinary.com/dizynfu2h/image/upload/v1701133395/website%20images/hand-drawn-one-line-art-illustration_23-2149276132_zz86ts.jpg",
   },
   {
-    src: "https://img.freepik.com/free-vector/gray-3d-icosahedron-black-background-vector_53876-168031.jpg?w=740&t=st=1700943588~exp=1700944188~hmac=01f55ba54ebd18804f91a4593d31d70e4df64319df4b501b37b295d6e86ce3bc",
+    src: "https://res.cloudinary.com/dizynfu2h/image/upload/v1701133509/website%20images/illustrated-colorful-abstract-parrot_516246-5_aa3a1v.jpg",
   },
 ];

@@ -1,8 +1,7 @@
 "use client"
-
 import React, { useEffect, useState } from "react";
 import styles from "../styles/card.module.css";
-import { Grid } from "@mui/material";
+import Masonry from "react-masonry-css";
 import { galleryData } from "../content";
 
 function PostCard() {
@@ -17,10 +16,9 @@ function PostCard() {
       const gyroElements = document.querySelectorAll(".gyro-element");
 
       gyroElements.forEach((element) => {
-        const tiltX = (event.gamma || 0) - initialGamma; // Adjusted tilt left-to-right (in degrees)
-        const tiltY = event.beta || 0; // Tilt front-to-back (in degrees)
-
-        // Apply the gyro effect to each image element
+        const scalingFactor = 0.4;
+        const tiltX = (event.gamma || 0) - initialGamma;
+        const tiltY = (event.beta || 1) * scalingFactor;
         element.style.transform = `rotateX(${tiltY}deg) rotateY(${tiltX}deg)`;
       });
     };
@@ -33,20 +31,26 @@ function PostCard() {
   }, [initialGamma]);
 
   return (
-    <div>
-      <Grid container justifyContent={"center"} gap={2} mt={10}>
-        {galleryData.map((images, index) => (
-          <Grid item xs={12} lg={3.5} key={index}>
-            <div className={`${styles.cardContainer} gyro-element`}>
-              <div className={styles.cardImgContainer}>
-                <img src={images.src} alt={`image-${index}`} />
-              </div>
+    <Masonry
+      breakpointCols={{ default: 4, 1100: 4, 700: 2, 500: 1 }}
+      className="my-masonry-grid"
+      columnClassName="my-masonry-grid_column"
+    >
+      {galleryData.map((images, index) => (
+        <div className={`${styles.cardContainer} gyro-element`} key={index}>
+          <div className={styles.cardImgContainer}>
+            <div className={styles.imageWrapper}>
+              <img
+                src={images.src}
+                alt={`image-${index}`}
+                className={styles.image}
+                loading="lazy"
+              />
             </div>
-          </Grid>
-        ))}
-      </Grid>
-      <div className={styles}></div>
-    </div>
+          </div>
+        </div>
+      ))}
+    </Masonry>
   );
 }
 

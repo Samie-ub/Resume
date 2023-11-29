@@ -1,0 +1,14 @@
+.modalContainer{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color:#ffffff8e;
+    backdrop-filter: blur(20px);
+    overflow-y: hidden;
+}
