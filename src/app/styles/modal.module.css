@@ -12,3 +12,21 @@
     backdrop-filter: blur(20px);
     overflow-y: hidden;
 }
+
+.selectedImage{
+    width: 100%;
+    border-radius: 1rem;
+    height: 30vh;
+}
+
+@media (max-width: 600px) {
+    .modalContainer {
+      padding: 0;
+      
+    }
+
+    .selectedImage{
+        height: 20vh;
+    }
+  }
+  

@@ -65,9 +65,12 @@ a {
   display: flex;
   align-items: center;
   position: fixed;
-  right: 2rem;
+  right: .7rem;
   bottom: 1rem;
   cursor: pointer;
+  background-color: var(--color-bg);
+  border-radius: 10rem;
+  padding: .8rem;
 }
 
 .custum-file-upload {
